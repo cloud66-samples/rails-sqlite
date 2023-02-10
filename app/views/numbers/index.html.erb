@@ -1,0 +1,14 @@
+<h1>Numbers</h1>
+
+<%= button_to "Add random number", method: :post %>
+
+<p>Total Numbers: <%=@numbers_count%></p>
+
+<h2>Stored Numbers</h2>
+<ul>
+  <% @numbers.each do |number| %>
+    <li>
+      <%= number.value %>
+    </li>
+  <% end %>
+</ul>
